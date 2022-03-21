@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/ataxan/projects/computer_vision/lab_01/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/OpenImg.dir/OpenImg.cpp.o -c /home/ataxan/projects/computer_vision/lab_01/OpenImg.cpp",
+  "file": "/home/ataxan/projects/computer_vision/lab_01/OpenImg.cpp"
+}
+]

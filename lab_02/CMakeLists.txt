@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( Lab_02 )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( lab_02 lab_02.cpp max_filter.cpp min_filter.cpp filters.h )
+target_link_libraries( lab_02 ${OpenCV_LIBS} )

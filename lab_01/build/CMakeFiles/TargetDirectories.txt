@@ -1,0 +1,5 @@
+/home/ataxan/projects/computer_vision/lab_01/build/CMakeFiles/edit_cache.dir
+/home/ataxan/projects/computer_vision/lab_01/build/CMakeFiles/rebuild_cache.dir
+/home/ataxan/projects/computer_vision/lab_01/build/CMakeFiles/package.dir
+/home/ataxan/projects/computer_vision/lab_01/build/CMakeFiles/package_source.dir
+/home/ataxan/projects/computer_vision/lab_01/build/CMakeFiles/OpenImg.dir
