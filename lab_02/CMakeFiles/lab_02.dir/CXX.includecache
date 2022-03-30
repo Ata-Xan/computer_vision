@@ -20,18 +20,6 @@ filters.h
 iostream
 -
 
-/home/ataxan/projects/computer_vision/lab_02/min_filter.cpp
-opencv2/highgui.hpp
--
-opencv2/imgcodecs.hpp
-/home/ataxan/projects/computer_vision/lab_02/opencv2/imgcodecs.hpp
-opencv2/imgproc.hpp
-/home/ataxan/projects/computer_vision/lab_02/opencv2/imgproc.hpp
-filters.h
-/home/ataxan/projects/computer_vision/lab_02/filters.h
-iostream
--
-
 /usr/local/include/opencv4/opencv2/core.hpp
 opencv2/core/cvdef.h
 /usr/local/include/opencv4/opencv2/opencv2/core/cvdef.h

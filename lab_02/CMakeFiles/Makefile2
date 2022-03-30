@@ -74,12 +74,12 @@ clean: CMakeFiles/lab_02.dir/clean
 CMakeFiles/lab_02.dir/all:
 	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/depend
 	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ataxan/projects/computer_vision/lab_02/CMakeFiles --progress-num=1,2,3,4 "Built target lab_02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ataxan/projects/computer_vision/lab_02/CMakeFiles --progress-num=1,2,3 "Built target lab_02"
 .PHONY : CMakeFiles/lab_02.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab_02.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ataxan/projects/computer_vision/lab_02/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ataxan/projects/computer_vision/lab_02/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lab_02.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ataxan/projects/computer_vision/lab_02/CMakeFiles 0
 .PHONY : CMakeFiles/lab_02.dir/rule

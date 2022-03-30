@@ -4,9 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ataxan/projects/computer_vision/lab_02/filters.cpp" "/home/ataxan/projects/computer_vision/lab_02/CMakeFiles/lab_02.dir/filters.cpp.o"
   "/home/ataxan/projects/computer_vision/lab_02/lab_02.cpp" "/home/ataxan/projects/computer_vision/lab_02/CMakeFiles/lab_02.dir/lab_02.cpp.o"
-  "/home/ataxan/projects/computer_vision/lab_02/max_filter.cpp" "/home/ataxan/projects/computer_vision/lab_02/CMakeFiles/lab_02.dir/max_filter.cpp.o"
-  "/home/ataxan/projects/computer_vision/lab_02/min_filter.cpp" "/home/ataxan/projects/computer_vision/lab_02/CMakeFiles/lab_02.dir/min_filter.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

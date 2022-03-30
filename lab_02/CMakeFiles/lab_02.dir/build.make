@@ -70,44 +70,29 @@ CMakeFiles/lab_02.dir/lab_02.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_02.dir/lab_02.cpp.s"
 	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ataxan/projects/computer_vision/lab_02/lab_02.cpp -o CMakeFiles/lab_02.dir/lab_02.cpp.s
 
-CMakeFiles/lab_02.dir/max_filter.cpp.o: CMakeFiles/lab_02.dir/flags.make
-CMakeFiles/lab_02.dir/max_filter.cpp.o: max_filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ataxan/projects/computer_vision/lab_02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab_02.dir/max_filter.cpp.o"
-	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab_02.dir/max_filter.cpp.o -c /home/ataxan/projects/computer_vision/lab_02/max_filter.cpp
+CMakeFiles/lab_02.dir/filters.cpp.o: CMakeFiles/lab_02.dir/flags.make
+CMakeFiles/lab_02.dir/filters.cpp.o: filters.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ataxan/projects/computer_vision/lab_02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab_02.dir/filters.cpp.o"
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab_02.dir/filters.cpp.o -c /home/ataxan/projects/computer_vision/lab_02/filters.cpp
 
-CMakeFiles/lab_02.dir/max_filter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_02.dir/max_filter.cpp.i"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ataxan/projects/computer_vision/lab_02/max_filter.cpp > CMakeFiles/lab_02.dir/max_filter.cpp.i
+CMakeFiles/lab_02.dir/filters.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_02.dir/filters.cpp.i"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ataxan/projects/computer_vision/lab_02/filters.cpp > CMakeFiles/lab_02.dir/filters.cpp.i
 
-CMakeFiles/lab_02.dir/max_filter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_02.dir/max_filter.cpp.s"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ataxan/projects/computer_vision/lab_02/max_filter.cpp -o CMakeFiles/lab_02.dir/max_filter.cpp.s
-
-CMakeFiles/lab_02.dir/min_filter.cpp.o: CMakeFiles/lab_02.dir/flags.make
-CMakeFiles/lab_02.dir/min_filter.cpp.o: min_filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ataxan/projects/computer_vision/lab_02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab_02.dir/min_filter.cpp.o"
-	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab_02.dir/min_filter.cpp.o -c /home/ataxan/projects/computer_vision/lab_02/min_filter.cpp
-
-CMakeFiles/lab_02.dir/min_filter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_02.dir/min_filter.cpp.i"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ataxan/projects/computer_vision/lab_02/min_filter.cpp > CMakeFiles/lab_02.dir/min_filter.cpp.i
-
-CMakeFiles/lab_02.dir/min_filter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_02.dir/min_filter.cpp.s"
-	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ataxan/projects/computer_vision/lab_02/min_filter.cpp -o CMakeFiles/lab_02.dir/min_filter.cpp.s
+CMakeFiles/lab_02.dir/filters.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_02.dir/filters.cpp.s"
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ataxan/projects/computer_vision/lab_02/filters.cpp -o CMakeFiles/lab_02.dir/filters.cpp.s
 
 # Object files for target lab_02
 lab_02_OBJECTS = \
 "CMakeFiles/lab_02.dir/lab_02.cpp.o" \
-"CMakeFiles/lab_02.dir/max_filter.cpp.o" \
-"CMakeFiles/lab_02.dir/min_filter.cpp.o"
+"CMakeFiles/lab_02.dir/filters.cpp.o"
 
 # External object files for target lab_02
 lab_02_EXTERNAL_OBJECTS =
 
 lab_02: CMakeFiles/lab_02.dir/lab_02.cpp.o
-lab_02: CMakeFiles/lab_02.dir/max_filter.cpp.o
-lab_02: CMakeFiles/lab_02.dir/min_filter.cpp.o
+lab_02: CMakeFiles/lab_02.dir/filters.cpp.o
 lab_02: CMakeFiles/lab_02.dir/build.make
 lab_02: /usr/local/lib/libopencv_gapi.so.4.5.5
 lab_02: /usr/local/lib/libopencv_stitching.so.4.5.5
@@ -163,7 +148,7 @@ lab_02: /usr/local/lib/libopencv_photo.so.4.5.5
 lab_02: /usr/local/lib/libopencv_imgproc.so.4.5.5
 lab_02: /usr/local/lib/libopencv_core.so.4.5.5
 lab_02: CMakeFiles/lab_02.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ataxan/projects/computer_vision/lab_02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lab_02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ataxan/projects/computer_vision/lab_02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable lab_02"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab_02.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -4,11 +4,11 @@
 #include "filters.h"
 #include <iostream>
 
-void task_1(char *str);
-cv::Mat max_filter(int const n, cv:: Mat img);
-int find_max(int values[], int valuesSize );
-cv::Mat min_filter(int const n, cv:: Mat img);
-int find_min(int values[], int valuesSize );
+void task_1_3(char *str);
+// cv::Mat max_filter(int const n, cv:: Mat img);
+// int find_max(int values[], int valuesSize );
+// cv::Mat min_filter(int const n, cv:: Mat img);
+// int find_min(int values[], int valuesSize );
 
 void task_3(cv:: Mat img);
 void task_4(cv::Mat img);
@@ -17,47 +17,59 @@ void task_5(cv::Mat img);
 int main(int argc, char** argv)
 {
     char fileName[] = "image.jpg";
-    task_1(fileName);
+    
+    cv::Mat gray = cv::imread("grayscale_image.jpg");
+    cv::cvtColor(gray,gray, cv::COLOR_BGR2GRAY);
+    task_5(gray);
+    
+    // task_5(gray);
+
+    
     
     return 0;
 }
 
-void task_1(char *str){
+void task_1_3(char *str){
     
     cv::Mat img = cv::imread(str);
     cv::Mat gray;
     cv::Mat grayMaxFilter;
     cv::Mat grayMinFilter;
+    cv::Mat grayMedFilter;
+    cv::Mat grayGausFilter;
     cv::cvtColor(img, gray, cv::COLOR_BGR2GRAY);
-    grayMaxFilter = max_filter(3, gray);
-    grayMinFilter = min_filter(3, gray);
-    // std::cout<<"GrayMaxFilter images shapes"<<grayMaxFilter.rows<<' '<<grayMaxFilter.cols<<'\n';
+
+    int kernelSize = 0;
+    std::cout<<"Enter the kernel size (it should be odd number) => "<<'\t';
+    while(kernelSize % 2 !=1){
+        std::cin>>kernelSize;
+        if (kernelSize %2 !=1)
+            std::cout<<'\n'<<"The kernel size should be an odd number... Please try again => "<<'\t';
+
+    }
+
+
+    grayMaxFilter = filters(kernelSize, gray, 0);
+    grayMinFilter = filters(kernelSize, gray, 1);
+    grayMedFilter = filters(kernelSize, gray, 2);
+    GaussianBlur(gray, grayGausFilter, cv::Size(kernelSize, kernelSize), 0);
+
+
+    cv::imshow("original_image.jpg", img);
+    cv::imshow("grayscale", gray);
+    cv::imshow("grayMinFilter", grayMinFilter);
+    
+    cv::imshow("grayMinFilter", grayMinFilter);
+    cv::imshow("grayMedFilter", grayMedFilter);
+    cv::imshow("grayGausFilter", grayGausFilter);
+    cv::imwrite("grayscale_image.jpg",gray);
+
+
     // task_5(gray);
-    cv::namedWindow("image.jpg");
-    cv::imshow("image.jpg", img);
-    cv::imshow("image.jpg_grayscale", gray);
-    cv::imshow("image.jpg_grayMaxFilter", grayMaxFilter);
-    cv::imshow("image.jpg_grayMinFilter", grayMinFilter);
-    // cv::imwrite("image_grayscale.jpg", grayMaxFilter);
-    // cv::imwrite("image_grayscale.jpg", grayMaxFilter);
+
     cv::waitKey(0);
 }
 
-void task_3(cv::Mat img){
-    cv::Mat image_blurred_with_3x3_kernel;
-    cv::Mat image_median_filtered;
-    GaussianBlur(img, image_blurred_with_3x3_kernel, cv::Size(3, 3), 0);
-    char window_name_blurred_with_3x3_kernel[] = "Lotus Blurred with 3 x 3 Gaussian Kernel";
-    char median_filtered[] = "Median filtered";
-
-    // cv::namedWindow(window_name_blurred_with_3x3_kernel);
-    medianBlur(img, image_median_filtered, 3 );
-    cv::imshow(window_name_blurred_with_3x3_kernel, image_blurred_with_3x3_kernel);
-    cv::imshow(median_filtered, image_median_filtered);
-    cv::waitKey(0);
-
-
-}
 
 void task_4(cv::Mat img){
 
@@ -90,5 +102,7 @@ void task_5(cv::Mat img){
     equalizeHist( img, dst );
     cv::imshow( "Source image", img );
     cv::imshow( "Equalized Image", dst );
+    // task_4(dst);
+    // task_4(img);
     cv::waitKey();
 }

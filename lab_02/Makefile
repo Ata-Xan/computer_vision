@@ -123,6 +123,33 @@ lab_02/fast:
 	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/build
 .PHONY : lab_02/fast
 
+filters.o: filters.cpp.o
+
+.PHONY : filters.o
+
+# target to build an object file
+filters.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/filters.cpp.o
+.PHONY : filters.cpp.o
+
+filters.i: filters.cpp.i
+
+.PHONY : filters.i
+
+# target to preprocess a source file
+filters.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/filters.cpp.i
+.PHONY : filters.cpp.i
+
+filters.s: filters.cpp.s
+
+.PHONY : filters.s
+
+# target to generate assembly for a file
+filters.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/filters.cpp.s
+.PHONY : filters.cpp.s
+
 lab_02.o: lab_02.cpp.o
 
 .PHONY : lab_02.o
@@ -150,60 +177,6 @@ lab_02.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/lab_02.cpp.s
 .PHONY : lab_02.cpp.s
 
-max_filter.o: max_filter.cpp.o
-
-.PHONY : max_filter.o
-
-# target to build an object file
-max_filter.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/max_filter.cpp.o
-.PHONY : max_filter.cpp.o
-
-max_filter.i: max_filter.cpp.i
-
-.PHONY : max_filter.i
-
-# target to preprocess a source file
-max_filter.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/max_filter.cpp.i
-.PHONY : max_filter.cpp.i
-
-max_filter.s: max_filter.cpp.s
-
-.PHONY : max_filter.s
-
-# target to generate assembly for a file
-max_filter.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/max_filter.cpp.s
-.PHONY : max_filter.cpp.s
-
-min_filter.o: min_filter.cpp.o
-
-.PHONY : min_filter.o
-
-# target to build an object file
-min_filter.cpp.o:
-	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/min_filter.cpp.o
-.PHONY : min_filter.cpp.o
-
-min_filter.i: min_filter.cpp.i
-
-.PHONY : min_filter.i
-
-# target to preprocess a source file
-min_filter.cpp.i:
-	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/min_filter.cpp.i
-.PHONY : min_filter.cpp.i
-
-min_filter.s: min_filter.cpp.s
-
-.PHONY : min_filter.s
-
-# target to generate assembly for a file
-min_filter.cpp.s:
-	$(MAKE) -f CMakeFiles/lab_02.dir/build.make CMakeFiles/lab_02.dir/min_filter.cpp.s
-.PHONY : min_filter.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lab_02"
+	@echo "... filters.o"
+	@echo "... filters.i"
+	@echo "... filters.s"
 	@echo "... lab_02.o"
 	@echo "... lab_02.i"
 	@echo "... lab_02.s"
-	@echo "... max_filter.o"
-	@echo "... max_filter.i"
-	@echo "... max_filter.s"
-	@echo "... min_filter.o"
-	@echo "... min_filter.i"
-	@echo "... min_filter.s"
 .PHONY : help
 
 
